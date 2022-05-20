@@ -1,0 +1,598 @@
+/*GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior:  smooth;
+    box-sizing: border-box; 
+}
+ body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:  #114105;
+    background: #fff;
+ }
+ .container-wrapper{
+    background-color: #000;
+    margin: 200px 200px;
+    padding: 50px 50px;
+ }
+ .contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:  1.5rem;
+    background:  #d3f6b5;
+    box-shadow:  0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    over-flow:  hidden;
+    opacity: 75%;
+
+}
+.form-container {
+    padding:  20px;
+}
+.form-container h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom:  1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #000;
+    border-radius: 0.4rem;
+}
+.contact-form text-area{
+    resize: none;
+    height: 200px;
+}
+.contact-form .send-button{
+    border: none;
+    outline: none;
+    background: #114105;
+    font-size:  1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-form .send-button:hover{
+    background: hsl(181, 100%, 44%, 0.8);
+    transition: 0.3s all linear;
+}
+.Map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* Making the page Responsive */
+@media (max-width: 964px) {
+    .contact-container {
+        margin:  0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 1rem ;
+        margin-top: 20rem !important;
+    }
+    .Map iframe{
+        height: 400px;
+    }
+}
+/*Contact us page finished */
+
+
+/*AboutUs page Begin*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #d3f6b5;
+  color: #000000;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #114105;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #53A340;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/*AboutUs page finished */
+
+/*Testing Menu page begins */
+*{
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+    list-style:none; 
+    text-decoration: none;
+    /*background-image: radial-gradient(#fff, #EBF9E8);*/
+    /*opacity: ;*/
+    /*font-family:;*/
+}
+.header-wrapper
+{ 
+    padding: 0px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+    /*height: 134px;*/
+}
+.header-wrapper .space
+{
+    height: 55px;
+}
+.header-wrapper .wrapper
+{
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 25%)
+    z-index: 135;
+    position: relative;
+    background: #fff;
+}
+.header-wrapper .wrapper .nav-bar
+{
+    display: flex;
+    max-width: 90% 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.header-wrapper .wrapper .nav-bar .nav-left .logo
+{
+    padding: 0;
+    width: 409px;
+}
+.logo img{
+    width: 150px;
+    border-radius: 0 0 10px 0;
+}
+.wrapper .nav-bar .nav-right
+{
+    width: 75%;
+}
+.nav-bar .nav-right .right-top
+{
+    background: #53A340;
+    justify-content: space-between;
+    border-radius: 0 0 0 10px;
+    height: 41px;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.nav-right .right-top .top-menu
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 0;
+}
+.right-top .top-menu ul
+{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.right-top .top-menu ul li
+{
+    border-bottom: 2px solid #47763B;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px 11px 20px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+}
+.right-top .top-menu ul li a {
+    color: #fff;
+}
+/*.dark-menu{
+    background: #EBF9E8;
+}*/
+.right-top .search_bar
+{
+    display: block;
+}
+.search_bar .search
+{
+    /*margin: 5px*/;
+    border-radius:3px;
+    box-sizing: 5px;
+    padding: -3px;
+    background-color: #EBF9E8; 
+    position: relative;
+    display: inline-flex;
+}
+.search form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+
+ }
+.search input{
+    border: #EBF9E8;
+    background: none;
+    color: #fff;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 15px;
+}
+.search_bar .search-icon
+{
+    margin: 5px;
+    padding: 0;
+    border: 3px;
+    outline: 0;
+    display: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-right .right-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0 10px;
+    background: #47763B;
+}
+.right-bottom .bottom-menu
+{
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 0;
+}
+.bottom-menu ul
+{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.bottom-menu ul li{
+    border-bottom: 2px solid #47763B;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 50px 11px 50px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+.bottom-menu ul li a{
+    color:#fff;
+}
+.right-bottom .login
+{
+    /*background: #98002E;*/
+    /*padding: 10px 25px;
+*/
+    color: #fff;
+
+    text-decoration: none;
+
+    /*font-size: 15px;
+*/
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.right-bottom .login{
+    background: none;
+    padding:10px 35px;
+    color:#fff;
+    text-decoration:none;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius:30px;
+
+}
+.right-bottom .login a{
+    text-decoration: none;
+    color: #fff;
+}
+/*.dark-menu,*/ .right-bottom .login ul li, 
+/*.bottom-menu ul li, */
+.right-top .top-menu ul li :hover
+{
+    background: #47763B;
+    border-radius:1px;
+    border-width: 0px;
+
+}
+.top-menu ul li, .bottom-menu ul li:hover{
+    background: #53A340;
+
+    border-radius:3px;
+}
+.sub-login
+{
+    display: none;
+}
+.bottom-menu ul li:hover .sub-login
+{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.bottom-menu ul li:hover .sub-login ul 
+{
+    color: #EBF9E8; 
+    background: #47763B;
+    display: block;
+    /*position: absolute;
+    background: rgb(0, 100, 0);*/
+    margin: 10px;
+    /*margin-left: -15px;*/
+
+}
+/*Testing Menu page page Ends */
+
+
+/*Alumni page begin*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e8ecff;
+    position: relative;
+}
+.veiw-box{
+    width: 900px;
+    height: 650px;
+    border-radius: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;    
+}
+#testimonials{
+    display: flex;
+    transition: 0.5s;
+}
+.user{
+    width: 800px;
+    text-align: center;
+    padding: 70px 90px;
+    box-sizing: border-box;
+    background: #321764;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+.space{
+    margin: 0 70px;
+}
+.user img{
+    width: 205px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #e8ecff;
+    position: absolute;
+    top: -60px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+.user p{
+    font-size: 22px;
+    color: #cbb4f5;
+    line-height: 32px;
+    margin: 60px 0 30px;
+    margin-left: 115px;
+}
+.user p::before{
+   /* content: '\201C';*/
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -57;
+    margin-right: 10px;
+}
+.user p::after{
+  /*  content: '\201D'; */
+    font-size: 120px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -70;
+    margin-left: 10px;
+}
+.user h3{
+    font-size: 26px;
+    color: #cbb4f5;
+}
+.controls{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.controls span{
+    width: 15px;
+    height: 15px;
+    background: #321764;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.active{
+    width: 45px !important;
+}
+
+/*Alumni page end */
+
+
+/* Extracuricular and Student life page begins */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Teko', sans-serif;
+    background: #f1fbff;
+    width: 100%;
+    min-height: 100vh;    
+}
+.wrapper{
+    width: 80%;
+    padding: 30px 0;
+    text-align: center;
+}
+.section-header{
+    text-transform: uppercase;
+    line-height: 70px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: #262626;
+    letter-spacing: 2px;
+    
+}
+.content {
+  padding: 10%;
+}
+.content h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.content p {
+  line-height: 1.5;
+}
+.main-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-main-content-gap: 25px;
+    grid-column-gap: 15px;
+}
+.main-content .box{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+    height: 250px;
+    overflow: hidden;    
+}
+.main-content .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.main-content .box:hover:before{
+    top: 0;
+    right: calc(100% - 5px);
+    z-index: 10;
+}
+.main-content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-content .box .img-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    transition: all 0.5s ease-in-out;   
+}
+.main-content .box:hover .img-text{
+    top: 0;
+    right: 0;
+}
+
+/* Extracuricular and Student life page ends */
