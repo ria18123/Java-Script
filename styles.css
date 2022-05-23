@@ -98,6 +98,8 @@
 /*Contact us page finished */
 
 
+
+
 /*AboutUs page Begin*/
 html {
   box-sizing: border-box;
@@ -126,7 +128,7 @@ html {
   color: #000000;
 }
 
-.container {
+.container{
   padding: 0 16px;
 }
 
@@ -163,6 +165,9 @@ html {
   }
 }
 /*AboutUs page finished */
+
+
+
 
 /*Testing Menu page begins */
 *{
@@ -398,6 +403,8 @@ html {
 /*Testing Menu page page Ends */
 
 
+
+
 /*Alumni page begin*/
 
 * {
@@ -406,7 +413,7 @@ html {
     font-family: sans-serif;
 }
 
-.container{
+.container-A{
     width: 100%;
     height: 100vh;
     background: #e8ecff;
@@ -428,6 +435,8 @@ html {
 #testimonials{
     display: flex;
     transition: 0.5s;
+
+
 }
 .user{
     width: 800px;
@@ -501,6 +510,9 @@ html {
 }
 
 /*Alumni page end */
+
+
+
 
 
 /* Extracuricular and Student life page begins */
